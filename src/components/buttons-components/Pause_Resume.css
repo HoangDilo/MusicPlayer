@@ -8,4 +8,5 @@
 
 .click {
     display: flex;
+    cursor: pointer;
 }

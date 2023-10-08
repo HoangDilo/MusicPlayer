@@ -17,8 +17,15 @@ function ProgressBar({ currentTime, setCurrentTime, totalTime, setAudioState, au
         prevStatus.current = audioState;
         //console.log(prevStatus.current);
         isDraging.current = true;
-        cirlce_ref.current.style.left = `${event.nativeEvent.offsetX + 15}px`;
-        pink_line_ref.current.style.width = `${event.nativeEvent.offsetX}px`
+
+        if((event.nativeEvent.offsetX) < (0 + 24)) {
+            cirlce_ref.current.style.left = `${0 + 24}px`;
+        } else if ((event.nativeEvent.offsetX) > (382 + 24)) {
+            cirlce_ref.current.style.left = `${382 + 24}px`;
+        } else {
+            cirlce_ref.current.style.left = `${event.nativeEvent.offsetX}px`;
+            pink_line_ref.current.style.width = `${event.nativeEvent.offsetX - 15}px`
+        }
         if (prevStatus.current) {
             setAudioState(false);
         }
@@ -26,14 +33,14 @@ function ProgressBar({ currentTime, setCurrentTime, totalTime, setAudioState, au
 
     const handleMove = (event) => {
         if (isDraging.current) {
-            if ((event.nativeEvent.offsetX + 15) < (0 + 24)) {
+            if ((event.nativeEvent.offsetX) < (0 + 24)) {
                 cirlce_ref.current.style.left = `${0 + 24}px`;
-            } else if ((event.nativeEvent.offsetX + 15) > (382 + 24)) {
+            } else if ((event.nativeEvent.offsetX) > (382 + 24)) {
                 cirlce_ref.current.style.left = `${382 + 24}px`;
             } else {
-                cirlce_ref.current.style.left = `${event.nativeEvent.offsetX + 15}px`;
+                cirlce_ref.current.style.left = `${event.nativeEvent.offsetX}px`;
                 //console.log(`${event.nativeEvent.offsetX}px`);
-                pink_line_ref.current.style.width = `${event.nativeEvent.offsetX}px`
+                pink_line_ref.current.style.width = `${event.nativeEvent.offsetX - 15}px`
             }
         }
     }
