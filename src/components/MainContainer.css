@@ -1,0 +1,74 @@
+.main-container {
+    background: #430020;
+    width: 430px;
+    height: 932px;
+    border-radius: 30px;
+    box-shadow: 8px 8px 24px 0px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+}
+
+.session-1 {
+    width: 100%;
+    padding: 47px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.cd-border {
+    width: 270px;
+    height: 270px;
+    border-radius: 270px;
+    background: rgba(254, 165, 176, 0.20);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bobble {
+    width: 201px;
+    height: 166px;
+    border-radius: 60px;
+    background: rgba(254, 165, 176, 0.14);
+    position: absolute;
+    z-index: 0;
+    transform: rotate(-29deg);
+    top: 231px;
+    left: 235px;
+    animation: move 30s infinite linear;
+}
+
+@keyframes move{
+    0% {
+        top: 231px;
+        left: 235px;
+        transform: rotate(-29deg);
+    }
+    25% {
+        top: 700px;
+        left: 150px;
+        transform: rotate(15deg);
+    }
+    50% {
+        top: 150px;
+        left: -20px;
+        transform: rotate(115deg);
+    }
+    75% {
+        top: -75px;
+        left: 300px;
+        transform: rotate(10deg);
+    }
+    100% {
+        top: 231px;
+        left: 235px;
+        transform: rotate(-29deg);
+    }
+}
+
+.session-2 {
+    width: 100%;
+    padding: 0px 27px 0px 24px;
+}

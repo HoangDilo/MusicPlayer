@@ -1,0 +1,12 @@
+.time-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0px 27px 0px 24px;
+}
+
+.time {
+    color: rgba(254, 165, 176, 0.50);
+    font-size: 20px;
+    font-weight: 500px;
+}

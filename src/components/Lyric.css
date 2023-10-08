@@ -1,0 +1,18 @@
+.lyric-container {
+    border-radius: 60px;
+    width: 430px;
+    height: 932px;
+    position: absolute;
+    top: 857px;
+    z-index: 2;
+    background: rgba(254, 165, 176, 0.14);
+    font-weight: 700;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.lyric-container > p {
+ margin: 23px 0px;
+}

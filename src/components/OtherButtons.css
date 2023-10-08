@@ -1,0 +1,13 @@
+.other-but-container {
+    width: 100%;
+    padding: 46px 24px 46px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.smaller-one {
+    display: flex;
+    align-items: center;
+    gap: 26px;
+}

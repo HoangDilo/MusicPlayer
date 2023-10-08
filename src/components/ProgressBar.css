@@ -1,0 +1,57 @@
+.bar-container {
+    height: 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 35px 0px 7px 0px;
+    padding: 0px 24px;
+    position: relative;
+}
+
+.bar {
+    position: relative;
+    border-radius: 6px;
+    overflow: hidden;
+    width: 100%;
+    height: 6px;
+    position: absolute;
+    width: 382px;
+}
+
+.line-white {
+    width: 382px;
+    height: 6px;
+    background: white;
+    position: absolute;
+    z-index: 0;
+}
+
+.line-pink {
+    height: 6px;
+    background: #FEA5B0;
+    position: absolute;
+    z-index: 1;
+}
+
+.circle {
+    width: 30px;
+    height: 30px;
+    background: #FEA5B0;
+    border-radius: 30px;
+    position: absolute;
+    left: 24px;
+    top: 0px;
+    /* opacity: 0.5; */
+    transform: translateX(-15px);
+    cursor: pointer;
+    z-index: 2;
+}
+
+.circle-range {
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 5;
+    cursor: pointer;
+}

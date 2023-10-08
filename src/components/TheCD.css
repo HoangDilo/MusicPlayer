@@ -1,0 +1,20 @@
+.cds {
+    height: 250px;
+}
+
+.cd-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: spin 10s infinite linear;
+    border-radius: 250px;
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+}
+
+
+@keyframes spin {
+    from {transform: rotate(0deg) ;}
+    to {transform: rotate(360deg);}
+}

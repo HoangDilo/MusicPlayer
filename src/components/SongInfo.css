@@ -1,0 +1,23 @@
+.info-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.names {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.song-name {
+    font-weight: 700;
+    font-size: 30px;
+    color: white;
+}
+
+.singer {
+    font-weight: 400;
+    font-size: 24px;
+    color: rgba(254, 165, 176, 0.50);
+}
